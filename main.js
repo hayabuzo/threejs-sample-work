@@ -75,7 +75,7 @@ const doorMesh = new THREE.Mesh(doorGeom,doorMate);
       doorMesh.castShadow = true; 
 
 const glassGeom = new THREE.BoxGeometry(holeWidth,doorHeight*0.5,0.05);
-const glassMate = new THREE.MeshPhysicalMaterial({ roughness: 0.7, transmission: 1, thickness: 1 });
+const glassMate = new THREE.MeshPhysicalMaterial({ roughness: 0.5, transmission: 1, thickness: 1 });
 const glassMesh = new THREE.Mesh(glassGeom, glassMate);
       glassMesh.position.y += doorHeight*0.25 - holeHeight*0.5;
 
